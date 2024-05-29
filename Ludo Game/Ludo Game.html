@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Ludo Game.css">
+
+    <title>Ludo Game!</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-5" id="player1">
+                <div class="baseSetUp">
+                    <div class="initialPosition">
+                        
+                    </div>
+                    <div class="initialPosition">
+                        
+                    </div>
+                    <div class="initialPosition">
+                        
+                    </div>
+                    <div class="initialPosition">
+                        h1
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="box1">
+                <table class="table">
+                    <tr class="rowOfTable">
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                    </tr>
+                    <tr class="rowOfTable">
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable" id="redLine1"></td>
+                        <td class="columnOfTable" id="redLine6"></td>
+                    </tr>
+                    <tr class="rowOfTable">
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable" id="redLine2"></td>
+                        <td class="columnOfTable"></td>
+                    </tr>
+                    <tr class="rowOfTable">
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable" id="redLine3"></td>
+                        <td class="columnOfTable"></td>
+                    </tr>
+                    <tr class="rowOfTable">
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable" id="redLine4"></td>
+                        <td class="columnOfTable"></td>
+                    </tr>
+                    <tr class="rowOfTable">
+                        <td class="columnOfTable" ></td>
+                        <td class="columnOfTable" id="redLine5"></td>
+                        <td class="columnOfTable"></td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <div class="col-5" id="player2">
+                <div class="baseSetUp">
+                    <div class="initialPosition">
+                        
+                    </div>
+                    <div class="initialPosition">
+                        
+                    </div>
+                    <div class="initialPosition">
+                        
+                    </div>
+                    <div class="initialPosition">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="temp">
+        <div class="row">
+            <div class="col">
+                <table cellspacing="0px" cellpadding="0px" class="table2">
+                    <tr class="rowOfTable">
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable" id="blueLine6"></td>
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                    </tr>
+                    <tr class="rowOfTable" >
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable" id="blueLine1"></td>
+                        <td class="columnOfTable" id="blueLine2"></td>
+                        <td class="columnOfTable" id="blueLine3"></td>
+                        <td class="columnOfTable" id="blueLine4"></td>
+                        <td class="columnOfTable" id="blueLine5"></td>
+                    </tr>
+                    <tr class="rowOfTable">
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <div class="winningBoard"></div>
+            </div>
+            <div class="col">
+                <table class="table2">
+                    <tr class="rowOfTable">
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                    </tr>
+                    <tr class="rowOfTable">
+                        <td class="columnOfTable" id="greenLine1"></td>
+                        <td class="columnOfTable" id="greenLine2"></td>
+                        <td class="columnOfTable" id="greenLine3"></td>
+                        <td class="columnOfTable" id="greenLine4"></td>
+                        <td class="columnOfTable" id="greenLine5"></td>
+                        <td class="columnOfTable"></td>
+                    </tr>
+                    <tr class="rowOfTable">
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable" id="greenLine6"></td>
+                        <td class="columnOfTable"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-5" id="player3">
+                <div class="baseSetUp">
+                    <div class="initialPosition">
+                        
+                    </div>
+                    <div class="initialPosition">
+                        
+                    </div>
+                    <div class="initialPosition">
+                        
+                    </div>
+                    <div class="initialPosition">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="box2">
+                <table class="table">
+                    <tr class="rowOfTable">
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable" id="yellowLine1"></td>
+                        <td class="columnOfTable"></td>
+                    </tr>
+                    <tr class="rowOfTable">
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable" id="yellowLine2"></td>
+                        <td class="columnOfTable"></td>
+                    </tr>
+                    <tr class="rowOfTable">
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable" id="yellowLine3"></td>
+                        <td class="columnOfTable"></td>
+                    </tr>
+                    <tr class="rowOfTable">
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable" id="yellowLine4"></td>
+                        <td class="columnOfTable"></td>
+                    </tr>
+                    <tr class="rowOfTable">
+                        <td class="columnOfTable" id="yellowLine5"></td>
+                        <td class="columnOfTable" id="yellowLine6"></td>
+                        <td class="columnOfTable"></td>
+                    </tr>
+                    <tr class="rowOfTable">
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                        <td class="columnOfTable"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-5" id="player4">
+                <div class="baseSetUp">
+                    <div class="initialPosition">
+                       
+                    </div>
+                    <div class="initialPosition">
+                        
+                    </div>
+                    <div class="initialPosition">
+                        
+                    </div>
+                    <div class="initialPosition">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="Ludo Game.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
